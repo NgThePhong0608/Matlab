@@ -1,0 +1,1 @@
+clc;clear all;close all;fx=@(x)exp(-x)-sin(x).^2-0.5;ezplot(fx,[0 3]);shg% Cuc tieu[x0 y0]=ginput;[xmin fxmin]=fminsearch(fx,x0);% Cuc daifx=@(x)exp(-x)-sin(x).^2-0.5;ezplot(fx,[0 3]);shg[x0 y0]=ginput;[xmax fxmax]=fminsearch(fx,x0);xmax, -fxmax,xmin, fxmin
