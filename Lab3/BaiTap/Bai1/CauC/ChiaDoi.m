@@ -12,9 +12,9 @@ while abs(f(c)) > tol
         a = c;
     else 
         b = c;
-    end;
+    end
     c = (a + b) ./ 2;
     k = k + 1;
-end;
+end
 fprintf('Nghiem x = %.10f\n' , c);
 fprintf('So lan lap: %f\n', k);

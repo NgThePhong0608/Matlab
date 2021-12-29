@@ -7,12 +7,12 @@ function [c, k] = PPCD(f,a,b,tol)
     k = 1;
     while abs(f(c)) > tol 
         if f(a)*f(b) > 0 
-            a = c
+            a = c;
         else
             b = c;
-        end;
+        end
         c = (a+b)/2;
         k = k + 1;
-    end;
+    end
 end
 

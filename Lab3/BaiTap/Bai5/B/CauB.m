@@ -13,5 +13,5 @@ while abs(x1-x0) > tol*(1-q1)/q1
     x0=x1;
     x1=fg1(x0);
     k=k+1;
-end;
+end
 fprintf('Nghiem x = %12.10f \nSo vong lap k = %d \n',x1,k);

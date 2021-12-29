@@ -18,7 +18,7 @@ while abs(f(x1)) > tol & abs(f(x2)) > tol
     x3 = x2 - (f(x2)/df(x2));
     x2 = x3;
     k = k + 1;
-end;
+end
 fprintf('Nghiem x1 = %.10f \n',x1);
 fprintf('Nghiem x2 = %.10f \n',x3);
 fprintf('So vong lap k = %d \n',k);

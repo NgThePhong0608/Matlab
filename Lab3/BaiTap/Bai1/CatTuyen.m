@@ -1,6 +1,6 @@
 % Pp cat tuyen
 clc;clear all; close all;
-syms x;y = y = exp(-x) - sin(x)s;
+syms x;y = exp(-x) - sin(x);
 a = 0; b = 1;
 fplot(char(y), [a b]);
 f = inline(vectorize(y),'x');

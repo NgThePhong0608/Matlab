@@ -14,11 +14,11 @@ while abs(f(c)) > tol
         a = c;
     else
         b = c;
-    end;
+    end
     ts = a*f(b) - b*f(a);
     ms = f(b) - f(a);
     c = ts / ms;
     k = k + 1;
-end;
+end
 fprintf('Nghiem x = %.10f \n',c);
 fprintf('So vong lap k = %d \n',k);
