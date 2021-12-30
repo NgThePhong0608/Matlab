@@ -12,5 +12,5 @@ S = 0;
 for k=1:N
     S = S + f(x(k),y(k),z(k));
 end
-S*(b-a)*(d-c)*(h-e)/N
-triplequad(f,a,b,c,d,e,h)
+S = S*(b-a)*(d-c)*(h-e)/N
+S1 = triplequad(f,a,b,c,d,e,h)

@@ -16,12 +16,12 @@ y0 = 1.25;
 x1 = x0 - (f(x0,y0)/ df(x0,y0));
 y1 = x1 - (f(x1,y0)/ df(x1,y0));
 k = 1;
-while abs(f(x1,y1)) > tol & abs(f(x1,y1)) > tol
+while abs(f(x0,y0)) > tol & abs(f(x1,y1)) > tol
     x0 = x1;
     x1 = x0 - (f(x0,y0)/ df(x0,y0));
     y0 = y1;
-    y1 = x1 - (f(x1,y0)/ df(x1,y0));
+    y1 = x1 - (f(x1,y1)/ df(x1,y1));
     k = k + 1;
-end;
+end
 fprintf('Nghiem x = %.10f , y = %.10f\n',x1);
 fprintf('So vong lap k = %d \n',k);

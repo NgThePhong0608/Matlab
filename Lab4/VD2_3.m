@@ -1,7 +1,8 @@
 clear all; clc;
-A=[2 4 3 4;3 1 -2 -2;4 11 7 7];%A=[A|b]
+% A=[2 4 3 4;3 1 -2 -2;4 11 7 7];%A=[A|b]
+A = [2 -4 4 -2 ; 4 -8 7 2 ; -1 4 3 5];
 n=size(A,1);
-% Elimination
+% Gauss Elimination
 for k=1:n-1
     for i=k+1:n
         p=A(i,k)/A(k,k);

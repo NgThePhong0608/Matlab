@@ -1,7 +1,7 @@
 % Newton Interpolatiing polynomial
 clc;clear all;close all;
-X=[-1.5 0.5 1.5 3.5];
-Y=[-7.875 5.625 1.875 3.375];
+X = [-4.2 -2.4 -1.1 2.1 4.9];
+Y = [29.1456 -25.5774 65.2761 51.2001 -11.6679];
 n=length(X)-1;
 x=-2;
 % Buoc 1: Tim ma tran sai phan
