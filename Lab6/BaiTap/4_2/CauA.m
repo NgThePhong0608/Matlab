@@ -10,6 +10,6 @@ S = 0;
 for k=1:N
     S = S + f(x(k),y(k));
 end
-(S*(b-a)*(d-c))/N
+S = (S*(b-a)*(d-c))/N
 I2 = dblquad(f,a,b,c,d)
 

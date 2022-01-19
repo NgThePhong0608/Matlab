@@ -10,6 +10,7 @@ S = 0;
 for k=1:N
     S = S + f(x(k),y(k));
 end
-(S*(b-a)*(d-c))/N
-dblquad(f,0,sqrt(2),0,2*pi)
+
+(S*(b-a)*(d-c))./N
+dblquad(f,a,b,c,d)
 

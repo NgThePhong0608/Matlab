@@ -1,6 +1,7 @@
 clc;clear all; close all;
 syms x; y = cos(x) / (x.^2 + 1);
 f = inline(vectorize(y),'x');
+S0 = CauAF(y)
 a = 0;b = 10;
 N = 5000;
 x = a; S = 0;

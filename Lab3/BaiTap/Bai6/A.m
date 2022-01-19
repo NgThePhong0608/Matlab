@@ -23,5 +23,5 @@ while abs(f(x0,y0)) > tol & abs(f(x1,y1)) > tol
     y1 = x1 - (f(x1,y1)/ df(x1,y1));
     k = k + 1;
 end
-fprintf('Nghiem x = %.10f , y = %.10f\n',x1);
+fprintf('Nghiem x = %.10f , y = %.10f\n',x1,y1);
 fprintf('So vong lap k = %d \n',k);
